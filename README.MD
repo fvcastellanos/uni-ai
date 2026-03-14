@@ -17,7 +17,7 @@ Execute the bash script:
 
 What this script do:
 
-- Create the virtual environment `.ml-env`
+- Create the virtual environment `.ai-env`
 - Set the local Python version to 3.14.0
 - Allow `direnv` to load automatically the virtual environment
 
@@ -54,13 +54,20 @@ To test the proper installation of dependencies you can execute the following co
 ## Folder structure
 
 ```
-uni-machine-learning
-|--.ml-env (virtualenv related files)
-|-- notebooks/ (notebooks)
+uni-ai
+|--.ai-env (virtualenv related files)
+| .python-version
+| requirements.txt
+| README
+|--machine-learning
+  |-- notebooks/ (notebooks)
+  |-- exports/ (exported documents)
+  |-- datasets/
+|--natural-language-processing
+  |-- notebooks/ (notebooks)
+  |-- exports/ (exported documents)
+  |-- datasets/
 |-- scripts
   | create-virtualenv.sh
   | install-dependencies.sh
-| .python-version
-| README
-| requirements.txt
 ```
