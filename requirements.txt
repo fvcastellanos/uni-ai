@@ -5,3 +5,8 @@ scikit-learn
 matplotlib
 seaborn
 openpyxl
+transformers[torch]
+datasets
+ipywidgets
+argilla
+evaluate
